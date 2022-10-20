@@ -8,6 +8,9 @@ describe("MarkovMachine class tests", function () {
   test("new MarkovMachine() should create an instance of MarkovMachine", function () {
     expect(mm).toBeInstanceOf(MarkovMachine);
   });
+  test("MarkovMachine should create an array of words", function () {
+    expect(mm.words).toEqual(["the", "cat", "in", "the", "hat"]);
+  });
   test("MarkovMachine should create possible chains", function () {
     // let mm = new MarkovMachine("the cat in the hat");
     expect(mm.chains).toEqual({
